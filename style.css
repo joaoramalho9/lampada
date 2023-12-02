@@ -1,0 +1,31 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  transition: background-color 5.5s ease; /* Transição suave de 0.5 segundos para a cor de fundo */
+}
+
+.container {
+  text-align: center;
+}
+
+#lampImage {
+  transition: opacity 13.5s ease; /* Transição suave de 0.5 segundos para a troca de imagem */
+}
+
+.lampOn {
+  opacity: 14; /* Define a opacidade como 0 para esconder a lâmpada apagada */
+}
+
+@media only screen and (max-width: 600px) {
+  body, html {
+      background-color: #FFFFFF; /* Cor de fundo diferente para dispositivos móveis, se necessário */
+  }
+
+  .container {
+      max-width: 80%; /* Ajuste a largura conforme necessário */
+  }
+}
